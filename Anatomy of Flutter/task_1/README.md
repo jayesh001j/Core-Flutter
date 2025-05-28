@@ -1,73 +1,58 @@
-🧪 Task 1 – Basic Flutter App & SafeArea
-This task introduces a simple Flutter app that displays multiline text using Text, SafeArea, and Center widgets. It's a beginner-friendly example to understand how Flutter layouts work.
+🧪 Task 1 – Simple Text Display using Text, Center, and SafeArea
+This task demonstrates how to build a very basic Flutter UI that displays styled multiline text using only core widgets like Text, Center, and SafeArea. It helps in understanding basic layout alignment and safe rendering across devices.
 
 ✅ Objective
-Use MaterialApp to create a basic Flutter structure.
+Understand and use Text, Center, and SafeArea.
 
-Learn how to use SafeArea, Center, and Text.
+Display multi-line text with \n escape characters.
 
-Display multi-line text with TextAlign.center.
+Align and format simple text on screen.
 
 🧠 Key Widgets & Concepts
 1. MaterialApp
-Wraps the app with Material Design structure.
-
-debugShowCheckedModeBanner: false hides the debug banner.
+Wraps the entire app with Material Design support.
 
 2. SafeArea
-Ensures UI does not get blocked by system status bars or notches.
+Ensures UI content is not hidden behind notches or system bars.
 
 3. Center
-Aligns child widget (Text) to the center of the screen.
+Centers its child (text in this case) both vertically and horizontally.
 
 4. Text
-Displays:
+Displays multiline string with newlines (\n) for vertical spacing.
 
-nginx
-Copy
-Edit
-Hello
-
-
-Dart
-
-
-Flutter
-With centered alignment using textAlign: TextAlign.center.
+Uses TextAlign.center for horizontal alignment.
 
 💻 Output Preview
-A white screen with the text:
+A clean screen with:
 
-nginx
-Copy
-Edit
+Centered multiline text:
 Hello
+
 
 
 Dart
 
 
-Flutter
-in the center of the screen, properly spaced using \n for line breaks.
 
+Flutter
+<img src="https://github.com/user-attachments/assets/[your_image_id]" width="22%">
 📦 Code Snippet
-dart
-Copy
-Edit
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Center(
-          child: Text(
-            "\nHello\n\n\n\nDart\n\n\n\nFlutter",
-            textAlign: TextAlign.center,
-          ),
+void main()
+{
+    runApp(
+        MaterialApp(
+            debugShowCheckedModeBanner: false,
+            home: SafeArea(
+              child: Center(
+                child: Text(
+                  "\nHello\n\n\n\nDart\n\n\n\nFlutter",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
         ),
-      ),
-    ),
-  );
+    );
 }

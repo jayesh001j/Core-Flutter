@@ -49,11 +49,9 @@ A list of fruits styled with individual colors and emojis:
 All items are aligned centrally on the screen with bold, custom-colored text.
 
 ---
-
-## 📦 Code Snippet
-
   <img src="https://github.com/user-attachments/assets/82951d22-50ba-428a-a380-09a480b84a2a" width="22%">
 
+## 📦 Code Snippet
 
 ```dart
 import 'package:flutter/material.dart';

@@ -35,14 +35,14 @@ This Flutter app demonstrates how to use `Text.rich()` to create a multi-colored
 ## 💻 Output Preview
 
 A list of fruits styled with individual colors and emojis:
-🍎 Apple/n
-🍇 Grapes/n
-🍒 Cherry/n
-🍓 Strawberry/n
-🍠 papaya/n
-🍍 Pineapple/n
-🍋 Lemon/n
-🍉 Watermelon/n
+🍎 Apple
+🍇 Grapes
+🍒 Cherry
+🍓 Strawberry
+🍠 papaya
+🍍 Pineapple
+🍋 Lemon
+🍉 Watermelon
 🥥 Coconut
 
 

@@ -1,16 +1,63 @@
-# task_1
+🧪 Task 1 – Basic Flutter App & SafeArea
+This task introduces a simple Flutter app that displays multiline text using Text, SafeArea, and Center widgets. It's a beginner-friendly example to understand how Flutter layouts work.
 
-A new Flutter project.
+✅ Objective
+Use MaterialApp to create a basic Flutter structure.
 
-## Getting Started
+Learn how to use SafeArea, Center, and Text.
 
-This project is a starting point for a Flutter application.
+Display multi-line text with TextAlign.center.
 
-A few resources to get you started if this is your first Flutter project:
+🧠 Key Widgets & Concepts
+1. MaterialApp
+Wraps the app with Material Design structure.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+debugShowCheckedModeBanner: false hides the debug banner.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. SafeArea
+Ensures UI does not get blocked by system status bars or notches.
+
+3. Center
+Aligns child widget (Text) to the center of the screen.
+
+4. Text
+Displays:
+
+Hello
+
+
+Dart
+
+
+Flutter
+With centered alignment using textAlign: TextAlign.center.
+
+💻 Output Preview
+A white screen with the text:
+Hello
+
+
+Dart
+
+
+Flutter
+in the center of the screen, properly spaced using \n for line breaks.
+
+📦 Code Snippet
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Center(
+          child: Text(
+            "\nHello\n\n\n\nDart\n\n\n\nFlutter",
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
+    ),
+  );
+}

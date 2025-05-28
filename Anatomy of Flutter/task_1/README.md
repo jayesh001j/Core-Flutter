@@ -23,6 +23,9 @@ Aligns child widget (Text) to the center of the screen.
 4. Text
 Displays:
 
+nginx
+Copy
+Edit
 Hello
 
 
@@ -34,6 +37,10 @@ With centered alignment using textAlign: TextAlign.center.
 
 💻 Output Preview
 A white screen with the text:
+
+nginx
+Copy
+Edit
 Hello
 
 
@@ -44,6 +51,9 @@ Flutter
 in the center of the screen, properly spaced using \n for line breaks.
 
 📦 Code Snippet
+dart
+Copy
+Edit
 import 'package:flutter/material.dart';
 
 void main() {

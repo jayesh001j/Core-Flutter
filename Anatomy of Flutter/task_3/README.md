@@ -47,7 +47,7 @@ This Flutter project demonstrates how to use `Text` widget properties like `maxL
 
 ---
 
-  <img src="https://github.com/user-attachments/assets/4bc38391-6e5a-48f7-95ae-354f675f3c14" width="22%">
+  <img src="https://github.com/user-attachments/assets/bf6c2246-e3c0-4283-9a1b-8d98cb7163b5" width="22%">
 
 
 ## 📦 Code Snippet

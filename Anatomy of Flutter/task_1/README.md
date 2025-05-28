@@ -44,6 +44,9 @@ All text is center-aligned on the screen.
 
 ---
 
+  <img src="https://github.com/user-attachments/assets/f34c2ba5-fa5c-4207-9544-4c5027fe4ad8" width="22%">
+
+
 ## 📦 Code Snippet
 
 ```dart

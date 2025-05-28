@@ -1,85 +1,71 @@
-# 🧪 Task 2 – AppBar, Text Styling & Scaffold
+🧪 Task 1 – Multiline Text with SafeArea & Center
+This task demonstrates how to build a simple Flutter UI using SafeArea, Center, and Text. It helps beginners understand how to align text and structure it using line breaks (\n) and center alignment.
 
-This task demonstrates how to build a simple Flutter UI using `Scaffold`, `AppBar`, and custom `Text` styling. It also shows how to organize a layout with a dark background and colorful styled text.
+✅ Objective
+Use SafeArea to avoid notches and system overlays.
 
----
+Center text on screen using Center.
 
-## ✅ Objective
+Use Text widget with line breaks for vertical spacing.
 
-- Understand and use `Scaffold` and `AppBar`.
-- Learn to style text using the `TextStyle` class.
-- Practice using colors, font weights, and decorations.
+Learn to align multiline text in Flutter.
 
----
+🧠 Key Widgets & Concepts
+1. MaterialApp
+Wraps the app with Material Design features.
 
-## 🧠 Key Widgets & Concepts
+2. SafeArea
+Ensures content is not hidden behind system UI (notch, status bar).
 
-### 1. `MaterialApp`
-- Wraps the app with Material Design features.
+3. Center
+Aligns child widget (text) in the center of the screen.
 
-### 2. `Scaffold`
-- Provides structure for the app screen (AppBar + Body).
+4. Text
+Displays the following multiline text:
 
-### 3. `AppBar`
-- Positioned at the top of the screen.
-- Includes:
-  - `leading`: a menu icon (`Icons.menu`)
-  - `title`: center-aligned title text `"jayesh"`
-  - `backgroundColor`: set to `Colors.yellow.shade800`
+nginx
+Copy
+Edit
+Hello
 
-### 4. `Text`
-- Displays `"Android & Flutter"` in the center with advanced styling.
 
-### 5. `TextStyle` Features Used:
-- `fontSize: 30`
-- `color: Colors.red`
-- `fontWeight: FontWeight.bold`
-- `decoration: TextDecoration.underline`
-- `decorationStyle: TextDecorationStyle.double`
-- `decorationColor: Colors.yellow.shade700`
 
----
+Dart
 
-## 💻 Output Preview
 
-A dark-themed screen with:
-- A **yellow AppBar** containing a menu icon and the title "jayesh"
-- A **centered red text** saying `"Android & Flutter"`, bold and double-underlined with yellow
 
----
+Flutter
+Uses \n for spacing and TextAlign.center to center it horizontally.
 
-  <img src="https://github.com/user-attachments/assets/cc731701-f433-4b17-8d45-40422f60751c" width="22%">
+💻 Output Preview
+A white screen with:
 
-## 📦 Code Snippet
+Vertically spaced text:
 
-```dart
+"Hello"
+
+"Dart"
+
+"Flutter"
+
+All centered in the middle of the screen.
+
+<img src="https://github.com/user-attachments/assets/[your_image_id]" width="22%">
+📦 Code Snippet
+dart
+Copy
+Edit
 import 'package:flutter/material.dart';
-
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.yellow.shade800,
-          leading: Icon(Icons.menu),
-          title: Text("jayesh"),
-        ),
-        backgroundColor: Colors.black,
-        body: Center(
+      home: SafeArea(
+        child: Center(
           child: Text(
-            "Android & Flutter",
-            style: TextStyle(
-              fontSize: 30,
-              color: Colors.red,
-              fontWeight: FontWeight.bold,
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.double,
-              decorationColor: Colors.yellow.shade700,
-            ),
+            "\nHello\n\n\n\nDart\n\n\n\nFlutter",
+            textAlign: TextAlign.center,
           ),
         ),
       ),

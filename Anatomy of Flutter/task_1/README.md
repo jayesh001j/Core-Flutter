@@ -33,3 +33,38 @@ This is the first basic Flutter app in the **Anatomy of Flutter** series. It dis
 
 The screen will display:
 
+Hello
+
+Dart
+
+Flutter
+
+
+All text is center-aligned on the screen.
+
+---
+
+## 📦 Code Snippet
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Center(
+          child: Text(
+            "\nHello\n\n\n\nDart\n\n\n\nFlutter",
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+
+
+

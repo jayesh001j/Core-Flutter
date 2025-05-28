@@ -48,7 +48,8 @@ A dark-themed screen with:
 
 ---
 
-  <img src="https://github.com/user-attachments/assets/cc731701-f433-4b17-8d45-40422f60751c" width="22%">
+  <img src="https://github.com/user-attachments/assets/d1813983-1c27-4f44-a959-abe529f9cf45" width="22%">
+
 
 ## 📦 Code Snippet
 

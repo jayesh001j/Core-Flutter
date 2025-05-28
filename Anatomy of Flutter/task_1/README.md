@@ -1,58 +1,88 @@
-🧪 Task 1 – Simple Text Display using Text, Center, and SafeArea
-This task demonstrates how to build a very basic Flutter UI that displays styled multiline text using only core widgets like Text, Center, and SafeArea. It helps in understanding basic layout alignment and safe rendering across devices.
+# 🧪 Task 2 – AppBar, Text Styling & Scaffold
 
-✅ Objective
-Understand and use Text, Center, and SafeArea.
+This task demonstrates how to build a simple Flutter UI using `Scaffold`, `AppBar`, and custom `Text` styling. It also shows how to organize a layout with a dark background and colorful styled text.
 
-Display multi-line text with \n escape characters.
+---
 
-Align and format simple text on screen.
+## ✅ Objective
 
-🧠 Key Widgets & Concepts
-1. MaterialApp
-Wraps the entire app with Material Design support.
+- Understand and use `Scaffold` and `AppBar`.
+- Learn to style text using the `TextStyle` class.
+- Practice using colors, font weights, and decorations.
 
-2. SafeArea
-Ensures UI content is not hidden behind notches or system bars.
+---
 
-3. Center
-Centers its child (text in this case) both vertically and horizontally.
+## 🧠 Key Widgets & Concepts
 
-4. Text
-Displays multiline string with newlines (\n) for vertical spacing.
+### 1. `MaterialApp`
+- Wraps the app with Material Design features.
 
-Uses TextAlign.center for horizontal alignment.
+### 2. `Scaffold`
+- Provides structure for the app screen (AppBar + Body).
 
-💻 Output Preview
-A clean screen with:
+### 3. `AppBar`
+- Positioned at the top of the screen.
+- Includes:
+  - `leading`: a menu icon (`Icons.menu`)
+  - `title`: center-aligned title text `"jayesh"`
+  - `backgroundColor`: set to `Colors.yellow.shade800`
 
-Centered multiline text:
-Hello
+### 4. `Text`
+- Displays `"Android & Flutter"` in the center with advanced styling.
 
+### 5. `TextStyle` Features Used:
+- `fontSize: 30`
+- `color: Colors.red`
+- `fontWeight: FontWeight.bold`
+- `decoration: TextDecoration.underline`
+- `decorationStyle: TextDecorationStyle.double`
+- `decorationColor: Colors.yellow.shade700`
 
+---
 
-Dart
+## 💻 Output Preview
 
+A dark-themed screen with:
+- A **yellow AppBar** containing a menu icon and the title "jayesh"
+- A **centered red text** saying `"Android & Flutter"`, bold and double-underlined with yellow
 
+---
 
-Flutter
-<img src="https://github.com/user-attachments/assets/[your_image_id]" width="22%">
-📦 Code Snippet
+  <img src="https://github.com/user-attachments/assets/cc731701-f433-4b17-8d45-40422f60751c" width="22%">
+
+## 📦 Code Snippet
+
+```dart
 import 'package:flutter/material.dart';
 
-void main()
-{
-    runApp(
-        MaterialApp(
-            debugShowCheckedModeBanner: false,
-            home: SafeArea(
-              child: Center(
-                child: Text(
-                  "\nHello\n\n\n\nDart\n\n\n\nFlutter",
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
+import 'package:flutter/services.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.yellow.shade800,
+          leading: Icon(Icons.menu),
+          title: Text("jayesh"),
         ),
-    );
+        backgroundColor: Colors.black,
+        body: Center(
+          child: Text(
+            "Android & Flutter",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.red,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline,
+              decorationStyle: TextDecorationStyle.double,
+              decorationColor: Colors.yellow.shade700,
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
 }
